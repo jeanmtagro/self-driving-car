@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "self-driving-car"
+version = "0.1.0"
+description = ""
+authors = ["Jean-Martial Tagro <jean-martial.tagro@outlook.fr>"]
+readme = "README.md"
+packages = [{include = "self_driving_car"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.graphics.dependencies]
+matplotlib = "^3.6.3"
+kivy = "^2.1.0"
+
+
+[tool.poetry.group.ai.dependencies]
+torch = "^1.13.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
